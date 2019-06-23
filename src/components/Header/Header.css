@@ -1,0 +1,18 @@
+header {
+    background-color: #111111;
+    box-shadow: 0 0 5px #000000;
+    flex-grow: inherit;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    position: relative;
+    float: left;
+}
+
+header ul li a {
+    text-decoration: none;
+}

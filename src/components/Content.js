@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import Flexbox from 'flexbox-react';
 
 class Content extends Component {
     render(props) {
         return (
-            <div>
+            <Flexbox flexDirection="column">
                 <h1>{this.props.numero}</h1>
                 <button onClick={this.props.counter}>Dale click</button>
-            </div>
+            </Flexbox>
         )
     }
 }
