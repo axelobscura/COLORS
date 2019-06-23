@@ -6,6 +6,7 @@ class Header extends Component {
         return (
             <div>
                 <ul>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/user/">Users</Link></li>
                 </ul>
             </div>
