@@ -6,12 +6,16 @@ import Flexbox from 'flexbox-react';
 class Footer extends Component {
     render() {
         return (
-            <Flexbox element="footer" height="60px">
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/user/">Users</Link></li>
-                </ul>
-            </Flexbox>
+            <footer>
+                {this.props.name} | {this.props.edad}
+                <button className="btn" onClick={this.props.cambiarNombre}>CAMBIAR NOMBRE</button>
+                <Flexbox element="footer" height="60px">
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/user/">Users</Link></li>
+                    </ul>
+                </Flexbox>
+            </footer>
         )
     }
 }
