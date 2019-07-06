@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Flexbox from 'flexbox-react';
+import MenuLateral from './MenuLateral/MenuLateral';
 import Content from './Content';
 import User from './User';
 
@@ -17,6 +18,7 @@ class Contenidos extends Component {
     render(props) {
         return (
             <Flexbox flexGrow={1} element="contenido">
+                <MenuLateral />
                 <Route
                     path="/"
                     exact
