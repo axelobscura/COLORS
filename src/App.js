@@ -17,15 +17,16 @@ class App extends Component {
 
   cambiarNombre = () => {
     console.log("ahue....");
-    this.setState({ name: 'Alek' });
+    let nombres = this.state.name === 'Luis' ? 'Axel' : 'Luis';
+    this.setState({ name: nombres });
   }
 
   render() {
     return (
       <Flexbox flexDirection="column" minHeight="100vh">
         <Router>
-          <Header cambiarNombre={this.cambiarNombre} name={this.state.name} edad={this.state.edad} />
-          <Contenidos />
+          <Header cambiarNombre={this.cambiarNombre} />
+          <Contenidos name={this.state.name} edad={this.state.edad} />
           <Footer cambiarNombre={this.cambiarNombre} name={this.state.name} edad={this.state.edad} />
         </Router>
       </Flexbox>

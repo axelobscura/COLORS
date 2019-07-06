@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Flexbox from 'flexbox-react';
 
 class Footer extends Component {

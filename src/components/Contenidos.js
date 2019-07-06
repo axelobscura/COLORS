@@ -22,7 +22,10 @@ class Contenidos extends Component {
                     exact
                     render={(props) => <Content {...props} counter={this.counter} numero={this.state.counter} />}
                 />
-                <Route path="/user" component={User} />
+                <Route
+                    path="/user"
+                    render={(props) => <User {...props} name={this.props.name} />}
+                />
             </Flexbox>
         )
     }
