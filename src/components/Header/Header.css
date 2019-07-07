@@ -1,6 +1,10 @@
 header {
     background-color: #fc0;
     flex-grow: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header ul {

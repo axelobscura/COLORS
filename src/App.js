@@ -10,14 +10,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'Juan',
+      name: 'Alek',
       edad: 36
     }
   }
 
   cambiarNombre = () => {
     console.log("ahue....");
-    let nombres = this.state.name === 'Luis' ? 'Axel' : 'Luis';
+    let nombres = this.state.name === 'Alek' ? 'Axel' : 'Alek';
     this.setState({ name: nombres });
   }
 
