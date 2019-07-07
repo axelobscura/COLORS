@@ -7,13 +7,12 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <Flexbox element="header" flexDirection="row" height="60px">
-
-                    <ul>
+                <Flexbox element="header" flexDirection="row">
+                    <ul flexDirection="row">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/user/">Users</Link></li>
+                        <li><button className="btn" onClick={this.props.cambiarNombre}>CAMBIAR NOMBRE</button></li>
                     </ul>
-                    <button className="btn" onClick={this.props.cambiarNombre}>CAMBIAR NOMBRE</button>
                 </Flexbox>
             </header>
         )
