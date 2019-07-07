@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Flexbox from 'flexbox-react';
 import MenuLateral from './MenuLateral/MenuLateral';
 import Widgets from './Widgets/Widgets';
-import Content from './Content';
-import User from './User';
+import Content from './Content/Content';
+import User from './User/User';
 
 class Contenidos extends Component {
     state = {
