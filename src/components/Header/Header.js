@@ -11,7 +11,7 @@ class Header extends Component {
                     <ul flexDirection="row">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/user/">Users</Link></li>
-                        <li><button className="btn" onClick={this.props.cambiarNombre}>CAMBIAR NOMBRE</button></li>
+                        <li><a onClick={this.props.cambiarNombre}>CAMBIAR NOMBRE</a></li>
                     </ul>
                 </Flexbox>
             </header>
